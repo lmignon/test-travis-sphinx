@@ -10,5 +10,5 @@ before_install:
 - git clone https://github.com/lmignon/travis-sphinx.git -b refactor-lmi
 - pip install travis-sphinx
 script:
-- travis-sphinx build -s doc/source/
+- travis-sphinx build
 - travis-sphinx deploy
