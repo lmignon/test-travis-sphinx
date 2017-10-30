@@ -1,19 +1,14 @@
 sudo: false
 cache: pip
-
 language: python
-
 python:
-  - "2.7"
+- '2.7'
 env:
   global:
-    # travis for docs build
-    - secure: 1r8MhN8yvgC982brnDvNvxNpP5XAQjebBeX2lQBTCP2TFK1FXC1tBTlP7DIqgbFkO7UvVmyFb56S1UwyP2nz/dASvvVmIJtMBUpZPG21o5JLyHkfCK9EimbilVcxaQkJWTFD67GfaKYe3RNg7F+i36ymyWE6HrosnxbQFqIAVsOjPbGZPrNNVruIOToR6RVVpwC3A1qN6V777C5gwi+1CcI94FgBiQNzQhq9ghp87hq7ixzxbB+Ec0ucNFTr3jho4rdpy0r9EeWV/V+TZjFNrcYDmyYJ6nP8eP4QIvP5c8D2P0MLob+oH2EAjanUgKR5j0/fI/VbGhQy0NXjBp6918CLDru6fxQMYS8nCYTZ8/ZjsTPPp/e8Ts+cS09yFbSP3+sxGcFFmo3nE3P40KsT6e36BGpHQIZVbzjJ6gpBfN04H/5gqJbRwmkfjQQ36I4RCzs1fWdBA8EdNqLjxIDAgcg5hlA3xfIBRADs7y7Ak5mmwNfpDnn+yPKMnpnLTVnoWNWDBaLhRLCyBNTBEKljuic0J2KQdCXmgSDTroZ6QQ4OzmbMltujk6zao9WbQbx5U5j9HxVUQ6segCoU3PJgDWtmkbLrHuKkOmhk3vnlMjFdhVZZfDj3Lmp6t+lo1/XM7tKjOhjjdUDKD/bZX3vIacDrcUw1gqjxGm5pbU4s2Os=
-
+    secure: ZQA6UMnZf1exIqVNOWEYafoRF93hkMaBU75ikfF6lSPv0XEvjN9iQu6WbPd8T3wK9taSNVP79mltLUWN7bdTIydo4rC0YlHtR8Vn01LfS3jUe7oR4tFSZyc0wdh+7quA5Ol9T+ydWyhm764WNq0YRRng/4dO6clWbEnrjnY+DbKgbYCt9l1wkJ5+Xps7Nx6GXTs6qbJrYwT/Z0657m/weau1NWKSC7ej70HATgxOsvaQd1c/i+cg3Or0YZZ5j+cZX9NvC7YK/722jc5sWEb7D3Zk+584F4cZXx9kT6fcFLwNoRtuLvOZtPFjx6F/tm41aw2Cf3eYZHYWVrhsgxDA7WU1BVt7cNBwxJErhR9w7+Xh24abi008R8SIdaDzrzykJoOScJ3H0aya1rDz3INROYf1/4c2UXR6kSqK6OgpEeSnXplfkyMM2BEhVDdVoupOaX8g19yNAIyPLet4V+wSx3g7OU0MxueX6r1A44UdwRZ/YQVX3OYnvhn7VZxKYz5EzD7/r2lEvQ0/r+HUsGisMCtyCrjJGO4DGcPmARgm9Y+ARaOUJy0bppq9qGRN/TLC/fzNBtjyDbsmVgdKDwMjxFQWFbFi8PynOntLfj0F160HNythofq/UAagmQWK6wW21nmkD3C4KDT9uECdrl/lViUSBq2U/CwqtxR4g/adiwE=
 before_install:
-  - git clone https://github.com/lmignon/travis-sphinx.git -b refactor-lmi
-  - pip install travis-sphinx
-
+- git clone https://github.com/lmignon/travis-sphinx.git -b refactor-lmi
+- pip install travis-sphinx
 script:
-  - travis-sphinx build -s doc/source/
-  - travis-sphinx deploy
+- travis-sphinx build -s doc/source/
+- travis-sphinx deploy
