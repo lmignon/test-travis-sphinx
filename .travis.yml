@@ -1,0 +1,14 @@
+sudo: false
+cache: pip
+
+language: python
+
+python:
+  - "2.7"
+
+before_install:
+  - git clone https://github.com/lmignon/travis-sphinx.git -b refactor-lmi
+
+script:
+  - travis-sphinx build -s doc/source/
+  - travis-sphinx deploy
