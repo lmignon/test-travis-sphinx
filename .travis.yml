@@ -11,4 +11,4 @@ before_install:
 - pip install -e ./travis-sphinx
 script:
 - travis-sphinx build -s doc/source/
-- travis-sphinx deploy -c alfodoo.org -m "my msg 1"
+- travis-sphinx deploy -c alfodoo.org -m "my msg"
